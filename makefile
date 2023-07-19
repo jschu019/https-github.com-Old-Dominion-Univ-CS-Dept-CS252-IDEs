@@ -57,6 +57,11 @@ testlist.o: testlist.cpp namelist.h
 namelist.o: namelist.cpp namelist.h
 
 
+#
+# A dummy target: "make all" will ccompile the main program
+#
+
+all: testlist
 
 #
 # A dummy target: "make clean" will remove all files that "make" produces.
